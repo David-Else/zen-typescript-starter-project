@@ -1,0 +1,31 @@
+{
+  "name": "typescript-starter-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile-typescript": "tsc",
+    "compile-typescript-watch": "tsc --watch",
+    "test": "mocha --reporter min --require esm --require ./test/setup-jsdom.js",
+    "test-watch": "mocha --watch --reporter min --require esm --require ./test/setup-jsdom.js",
+    "build-bundle": "rollup --config"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@ampproject/rollup-plugin-closure-compiler": "^0.9.0",
+    "@types/mocha": "^5.2.6",
+    "@types/node": "^11.13.4",
+    "@typescript-eslint/eslint-plugin": "^1.6.0",
+    "@typescript-eslint/parser": "^1.6.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-prettier": "^4.1.0",
+    "esm": "^3.2.22",
+    "jsdom": "^14.0.0",
+    "mocha": "^6.1.3",
+    "rollup": "^1.10.0",
+    "typescript": "^3.4.3"
+  }
+}

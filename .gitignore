@@ -1,0 +1,8 @@
+node_modules
+.vscode
+dist
+docs
+pnpm-lock.yaml
+# Ignores compiled TypeScript files
+src/**/*.js
+src/**/*.map

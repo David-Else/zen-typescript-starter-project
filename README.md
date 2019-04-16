@@ -1,4 +1,4 @@
-# typescript-starter-project
+# zen-typescript-starter-project
 
 Modern and minimalist TypeScript front end starter project using ES6 modules
 with optional bundling. Fully customizable.
@@ -92,9 +92,9 @@ but it will most likely require you to re-write parts of your code and is
 considered an advanced topic. It will create the smallest bundle sizes known to
 humanity if you want to try it.
 
-The starter project bundling facilities are the most basic and important, tree
-shaking and minification. If you want to expand on that then you can edit
-`rollup.config.js` and install additional extensions as needed.
+The zen-typescript-starter-project bundling facilities are the most basic and
+important, tree shaking and minification. If you want to expand on that then you
+can edit `rollup.config.js` and install additional extensions as needed.
 
 ## Recommended [Visual Studio Code](https://code.visualstudio.com/) extensions
 

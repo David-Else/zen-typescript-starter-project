@@ -35,7 +35,7 @@ for optional bundling and minification if required.
 
 ### Installation
 
-`git clone https://github.com/David-Else/typescript-starter-project`
+`git clone https://github.com/David-Else/zen-typescript-starter-project`
 
 ### Run NPM Scripts.
 

@@ -16,7 +16,14 @@
   },
   "plugins": ["@typescript-eslint"],
   "rules": {
-    "lines-between-class-members": "off"
+    "lines-between-class-members": "off",
+    "@typescript-eslint/no-for-in-array": "warn",
+    "@typescript-eslint/explicit-function-return-type": [
+      "warn",
+      {
+        "allowExpressions": true
+      }
+    ]
   },
   "env": {
     "browser": true,

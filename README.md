@@ -37,6 +37,12 @@ for optional bundling and minification if required.
 
 `git clone https://github.com/David-Else/zen-typescript-starter-project`
 
+`npm install` or pnpm/yarn install
+
+Ignore errors like
+ `WARN eslint-config-airbnb-base@13.1.0 requires a peer of eslint-plugin-import@^2.14.0 but none was installed.`
+We left that out on purpose.
+
 ### Run NPM Scripts.
 
 Use the NPM scripts via the Visual Studio Code interface or command line.

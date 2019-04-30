@@ -9,8 +9,8 @@
     "test": "mocha --reporter min --require esm --require ./test/setup-jsdom.js",
     "test-watch": "mocha --watch --reporter min --require esm --require ./test/setup-jsdom.js",
     "live-server-default": "live-server --ignore=**/*.ts,**/*.map",
-    "launch-chromium-debugger": "/usr/bin/chromium-browser --remote-debugging-port=9222",
-    "live-server-chromium": "live-server --browser=/usr/bin/chromium-browser --ignore=**/*.ts,**/*.map",
+    "launch-chromium-debugger-linux": "/usr/bin/chromium-browser --remote-debugging-port=9222",
+    "live-server-chromium-linux": "live-server --browser=/usr/bin/chromium-browser --ignore=**/*.ts,**/*.map",
     "build-bundle": "rollup --config"
   },
   "keywords": [],

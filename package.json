@@ -4,14 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start-linux": "npm run launch-chromium-debugger-linux & npm run live-server-chromium-linux & npm run compile-typescript-watch",
+    "start-development": "npm run chromium-remote-debugging & npm run live-server & npm run compile-typescript-watch",
     "compile-typescript": "tsc",
     "compile-typescript-watch": "tsc --watch",
     "test": "mocha --reporter min --require esm --require ./test/setup-jsdom.js",
     "test-watch": "mocha --watch --reporter min --require esm --require ./test/setup-jsdom.js",
-    "live-server-default": "live-server --ignore=**/*.ts,**/*.map",
-    "launch-chromium-debugger-linux": "/usr/bin/chromium-browser --remote-debugging-port=9222",
-    "live-server-chromium-linux": "live-server --browser=/usr/bin/chromium-browser --ignore=**/*.ts,**/*.map",
+    "live-server": "live-server --browser=chromium-browser --ignore=**/*.ts,**/*.map",
+    "chromium-remote-debugging": "chromium-browser --remote-debugging-port=9222",
     "build-bundle": "rollup --config"
   },
   "keywords": [],

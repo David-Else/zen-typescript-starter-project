@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start-linux": "npm run launch-chromium-debugger-linux & npm run live-server-chromium-linux & npm run compile-typescript-watch",
     "compile-typescript": "tsc",
     "compile-typescript-watch": "tsc --watch",
     "test": "mocha --reporter min --require esm --require ./test/setup-jsdom.js",

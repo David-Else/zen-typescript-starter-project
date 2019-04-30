@@ -8,9 +8,10 @@
     "compile-typescript-watch": "tsc --watch",
     "test": "mocha --reporter min --require esm --require ./test/setup-jsdom.js",
     "test-watch": "mocha --watch --reporter min --require esm --require ./test/setup-jsdom.js",
-    "build-bundle": "rollup --config",
     "live-server-default": "live-server --ignore=**/*.ts,**/*.map",
-    "live-server-chromium": "live-server --browser=/usr/bin/chromium-browser --ignore=**/*.ts,**/*.map"
+    "launch-chromium-debugger": "/usr/bin/chromium-browser --remote-debugging-port=9222",
+    "live-server-chromium": "live-server --browser=/usr/bin/chromium-browser --ignore=**/*.ts,**/*.map",
+    "build-bundle": "rollup --config"
   },
   "keywords": [],
   "author": "",
@@ -26,6 +27,7 @@
     "eslint-config-prettier": "^4.2.0",
     "esm": "^3.2.22",
     "jsdom": "^15.0.0",
+    "live-server": "^1.2.1",
     "mocha": "^6.1.4",
     "rollup": "^1.10.1",
     "typescript": "^3.4.5"

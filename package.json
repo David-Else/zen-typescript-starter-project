@@ -8,7 +8,9 @@
     "compile-typescript-watch": "tsc --watch",
     "test": "mocha --reporter min --require esm --require ./test/setup-jsdom.js",
     "test-watch": "mocha --watch --reporter min --require esm --require ./test/setup-jsdom.js",
-    "build-bundle": "rollup --config"
+    "build-bundle": "rollup --config",
+    "live-server-default": "live-server --ignore=**/*.ts,**/*.map",
+    "live-server-chromium": "live-server --browser=/usr/bin/chromium-browser --ignore=**/*.ts,**/*.map"
   },
   "keywords": [],
   "author": "",

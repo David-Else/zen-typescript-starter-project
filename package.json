@@ -2,7 +2,7 @@
   "name": "typescript-starter-project",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/app.js",
   "scripts": {
     "start-development": "npm run chromium-remote-debugging & npm run live-server & npm run compile-typescript-watch",
     "compile-typescript": "tsc",

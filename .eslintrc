@@ -16,8 +16,10 @@
   },
   "plugins": ["@typescript-eslint"],
   "rules": {
+    "no-const-assign": "off",
+    "no-dupe-class-members": "off",
+    "no-undef": "off",
     "lines-between-class-members": "off",
-    "@typescript-eslint/no-for-in-array": "warn",
     "@typescript-eslint/explicit-function-return-type": [
       "warn",
       {

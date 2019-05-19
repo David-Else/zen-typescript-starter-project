@@ -47,10 +47,10 @@ We left that out on purpose.
 
 Use the NPM scripts via the Visual Studio Code interface or command line.
 
-Typical use might be run 'compile-typescript-watch' to start compilation. This
-will continuously convert all newly edited TypeScript files to .js files in the
-same directory. Use the recommended Visual Studio Code settings below to make
-the compiled .js files invisible in the editor.
+Typical use might be run 'start-typescript-development' to start compilation,
+testing, and linting. This will continuously convert all newly edited TypeScript
+files to .js files in the same directory. Use the recommended Visual Studio Code
+settings below to make the compiled .js files invisible in the editor.
 
 ### Live Preview
 
@@ -69,10 +69,9 @@ https://github.com/Microsoft/TypeScript/issues/16577#
 
 ### Testing
 
-To run your tests once, or with --watch mode, use the corresponding script.
 Mocha is run using `--require esm --require ./test/setup-jsdom.js`, so ES6
-Modules work out of the box, and all jsdom settings can be edited in the setup
-file.
+Modules work out of the box, and all jsdom settings can be edited in the
+`setup-jsdom.js` file.
 
 The tests are run on the compiled `.js` files, so make sure you are running in
 TSC watch mode or you might find yourself running old versions of the tests.

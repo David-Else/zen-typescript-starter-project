@@ -4,13 +4,10 @@
   "description": "",
   "main": "src/app.js",
   "scripts": {
-    "start-development": "npm run chromium-remote-debugging & npm run live-server & npm run compile-typescript-watch",
-    "compile-typescript": "tsc",
-    "compile-typescript-watch": "tsc --watch",
+    "start-typescript-development": "tsc-watch --onSuccess 'npm --silent run test-and-eslint'",
+    "test-and-eslint": "npm run test && npm run eslint",
     "test": "mocha --reporter min --require esm --require ./test/setup-jsdom.js",
-    "test-watch": "mocha --watch --reporter min --require esm --require ./test/setup-jsdom.js",
-    "live-server": "live-server --browser=chromium-browser --ignore=**/*.ts,**/*.map",
-    "chromium-remote-debugging": "chromium-browser --remote-debugging-port=9222",
+    "eslint": "eslint --cache --no-color --ext .ts src/ test/",
     "build-bundle": "rollup --config"
   },
   "keywords": [],
@@ -27,9 +24,9 @@
     "eslint-config-prettier": "^4.3.0",
     "esm": "^3.2.25",
     "jsdom": "^15.1.0",
-    "live-server": "^1.2.1",
     "mocha": "^6.1.4",
     "rollup": "^1.12.2",
+    "tsc-watch": "2.2.1",
     "typescript": "^3.4.5"
   },
   "prettier": {

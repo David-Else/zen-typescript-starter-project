@@ -7,7 +7,7 @@
     "start-typescript-development": "tsc-watch --onSuccess 'npm --silent run test-and-eslint'",
     "test-and-eslint": "npm run test && npm run eslint",
     "test": "mocha --reporter min --require esm --require ./test/setup-jsdom.js",
-    "eslint": "eslint --cache --no-color --ext .ts src/ test/",
+    "eslint": "eslint --cache -f unix --ext .ts src/ test/",
     "build-bundle": "rollup --config"
   },
   "keywords": [],

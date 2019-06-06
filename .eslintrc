@@ -6,6 +6,7 @@
     "./node_modules/eslint-config-airbnb-base/rules/style.js",
     "./node_modules/eslint-config-airbnb-base/rules/variables.js",
     "./node_modules/eslint-config-airbnb-base/rules/es6.js",
+    "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
     "prettier",
     "prettier/@typescript-eslint"
@@ -16,12 +17,11 @@
   },
   "plugins": ["@typescript-eslint"],
   "rules": {
-    "no-const-assign": "off",
-    "no-dupe-class-members": "off",
-    "no-undef": "off",
     "lines-between-class-members": "off",
     "no-empty-function": "off",
     "no-useless-constructor": "off",
+    "@typescript-eslint/member-ordering": "warn",
+    "@typescript-eslint/no-unused-vars": "off",
     "@typescript-eslint/no-useless-constructor": "warn",
     "@typescript-eslint/no-parameter-properties": "off",
     "@typescript-eslint/explicit-function-return-type": [

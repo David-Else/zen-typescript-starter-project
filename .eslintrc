@@ -20,10 +20,11 @@
     "lines-between-class-members": "off",
     "no-empty-function": "off",
     "no-useless-constructor": "off",
-    "@typescript-eslint/member-ordering": "warn",
     "@typescript-eslint/no-unused-vars": "off",
     "@typescript-eslint/no-useless-constructor": "warn",
     "@typescript-eslint/no-parameter-properties": "off",
+    "@typescript-eslint/no-unnecessary-type-assertion": "warn",
+    "@typescript-eslint/member-ordering": "warn",
     "@typescript-eslint/unified-signatures": "warn",
     "@typescript-eslint/explicit-function-return-type": [
       "warn",

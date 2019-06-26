@@ -11,6 +11,15 @@
       "port": 9222,
       "webRoot": "${workspaceFolder}",
       "skipFiles": ["node_modules/**/*.js"]
+    },
+
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Program",
+      "program": "${file}",
+      //   "program": "${workspaceFolder}/src/app.js",
+      "skipFiles": ["<node_internals>/**/*.js"]
     }
   ]
 }

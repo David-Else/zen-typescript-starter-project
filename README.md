@@ -20,8 +20,8 @@ delight.
 
 Uses [ESlint](https://eslint.org/),
 [typescript-eslint](https://github.com/typescript-eslint/typescript-eslint) /
-[eslint-config-prettier](https://github.com/prettier/eslint-config-prettier) and
-[eslint-config-airbnb-base](https://github.com/airbnb/javascript) for linting.
+[eslint-config-prettier](https://github.com/prettier/eslint-config-prettier) for
+linting.
 
 Uses [Mocha](https://mochajs.org/) with [jsdom](https://github.com/jsdom/jsdom)
 and Node.js's built in strict [assert](https://nodejs.org/api/assert.html) for
@@ -103,7 +103,7 @@ can edit `rollup.config.js` and install additional extensions as needed.
 
 ## Recommended [Visual Studio Code](https://code.visualstudio.com/) extensions
 
-`dbaeumer.vscode-eslint` `esbenp.prettier-vscode` `ritwickdey.liveserver`
+`esbenp.prettier-vscode` `ritwickdey.liveserver`
 
 ## Recommended Visual Studio Code `settings.json`
 
@@ -113,19 +113,6 @@ can edit `rollup.config.js` and install additional extensions as needed.
     "**/*.js": { "when": "$(basename).ts" },
     "**/*.js.map": true
   },
-  // enable dbaeumer.vscode-eslint checking and fixing in both `.ts` and `.tsx` files
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    {
-      "language": "typescript",
-      "autoFix": true
-    },
-    {
-      "language": "typescriptreact",
-      "autoFix": true
-    }
-  ],
 ```
 
 ## Additional Anti-bloat Recommendations

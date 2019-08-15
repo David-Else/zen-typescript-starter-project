@@ -138,7 +138,13 @@
       ],
       "@typescript-eslint/no-parameter-properties": "off",
       "@typescript-eslint/member-ordering": "warn",
-      "@typescript-eslint/unified-signatures": "warn"
+      "@typescript-eslint/unified-signatures": "warn",
+      "@typescript-eslint/explicit-function-return-type": [
+        "warn",
+        {
+          "allowExpressions": true
+        }
+      ]
     },
     "env": {
       "browser": true,

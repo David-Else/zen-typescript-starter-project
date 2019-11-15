@@ -1,0 +1,26 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      // Use 'Developer: Reload Window' to reset problem panel
+      "label": "eslint-problemMatcher",
+      "type": "npm",
+      "script": "eslint",
+      "problemMatcher": ["$eslint-stylish"],
+      "presentation": {
+        "clear": true
+      }
+    },
+    {
+      "type": "npm",
+      "script": "start-typescript-development",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "clear": true
+      }
+    }
+  ]
+}

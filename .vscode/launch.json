@@ -7,19 +7,27 @@
     {
       "type": "chrome",
       "request": "attach",
-      "name": "Attach to Chrome",
+      "name": "Attach to Chrome with skipFiles",
       "port": 9222,
       "webRoot": "${workspaceFolder}",
-      "skipFiles": ["node_modules/**/*.js"]
-    },
-
-    {
-      "type": "node",
-      "request": "launch",
-      "name": "Launch Program",
-      "program": "${file}",
-      //   "program": "${workspaceFolder}/src/app.js",
-      "skipFiles": ["<node_internals>/**/*.js"]
+      "skipFiles": [
+        "${workspaceFolder}/node_modules/**/*.js",
+        "${workspaceFolder}/lib/**/*.js",
+        "<node_internals>/**/*.js"
+      ]
     }
+
+    // {
+    //   "type": "node",
+    //   "request": "launch",
+    //   "name": "Launch Program",
+    //   "program": "${file}",
+    //   //   "program": "${workspaceFolder}/src/app.js",
+    //   "skipFiles": [
+    //     "${workspaceFolder}/node_modules/**/*.js",
+    //     "${workspaceFolder}/lib/**/*.js",
+    //     "<node_internals>/**/*.js"
+    //   ]
+    // }
   ]
 }

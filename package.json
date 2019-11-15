@@ -7,8 +7,8 @@
     "start-typescript-development": "tsc-watch --onSuccess 'npm --silent run test-and-eslint'",
     "test-and-eslint": "npm run test && npm run eslint",
     "test": "mocha --reporter min --require esm --require ./setup-jsdom.js",
-    "eslint": "eslint --cache -f unix --ext .ts src/ test/",
-    "eslint-fix": "eslint --fix --cache -f unix --ext .ts src/ test/",
+    "eslint": "eslint --cache --ext .ts src/ test/",
+    "eslint-fix": "eslint --fix --cache --ext .ts src/ test/",
     "build-bundle": "rollup --config"
   },
   "keywords": [],
@@ -22,6 +22,7 @@
     "@typescript-eslint/parser": "^2.0.0",
     "eslint": "^6.1.0",
     "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-functional": "^1.0.0",
     "esm": "^3.2.25",
     "jsdom": "^15.1.1",
     "mocha": "^6.2.0",
@@ -34,6 +35,17 @@
     "proseWrap": "always",
     "trailingComma": "all",
     "quoteProps": "consistent"
+  },
+  "comments": {
+    "eslintConfig-rules-optional": [
+      "functional/immutable-data",
+      "functional/no-let",
+      "functional/prefer-readonly-type",
+      "functional/no-conditional-statement",
+      "functional/no-expression-statement",
+      "functional/no-loop-statement",
+      "functional/no-return-void"
+    ]
   },
   "eslintConfig": {
     "extends": [
@@ -49,7 +61,8 @@
       "project": "./tsconfig.json"
     },
     "plugins": [
-      "@typescript-eslint"
+      "@typescript-eslint",
+      "functional"
     ],
     "rules": {
       "no-useless-return": "warn",
@@ -146,7 +159,9 @@
         {
           "allowExpressions": true
         }
-      ]
+      ],
+      "functional/no-let": "error",
+      "functional/no-loop-statement": "error"
     },
     "env": {
       "browser": true,

@@ -1030,7 +1030,7 @@
       "no-param-reassign": [
         "error",
         {
-          "props": false,
+          "props": true,
           "ignorePropertyModificationsFor": [
             "acc",
             "accumulator",

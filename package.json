@@ -127,7 +127,8 @@
           ],
           "ignoreArrayIndexes": true,
           "enforceConst": true,
-          "detectObjects": false
+          "detectObjects": false,
+          "ignoreReadonlyClassProperties": true
         }
       ],
       "no-unused-expressions": [

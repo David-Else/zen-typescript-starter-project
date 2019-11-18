@@ -118,7 +118,7 @@
         "off"
       ],
       "@typescript-eslint/no-magic-numbers": [
-        "error",
+        "off",
         {
           "ignore": [
             0,
@@ -1192,6 +1192,19 @@
       ],
       "@typescript-eslint/explicit-function-return-type": "error",
       "@typescript-eslint/no-parameter-properties": "off",
+      "@typescript-eslint/member-ordering": "error",
+      "@typescript-eslint/array-type": "error",
+      "@typescript-eslint/consistent-type-definitions": [
+        "error",
+        "interface"
+      ],
+      "@typescript-eslint/no-floating-promises": "error",
+      "@typescript-eslint/no-unnecessary-condition": "error",
+      "@typescript-eslint/no-unnecessary-qualifier": "error",
+      "@typescript-eslint/no-unnecessary-type-arguments": "error",
+      "@typescript-eslint/prefer-for-of": "error",
+      "@typescript-eslint/prefer-readonly": "error",
+      "@typescript-eslint/unified-signatures": "error",
       "functional/no-let": "error",
       "functional/no-conditional-statement": "error",
       "functional/no-loop-statement": "error"

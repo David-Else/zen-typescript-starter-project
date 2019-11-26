@@ -1205,6 +1205,8 @@
       "@typescript-eslint/prefer-for-of": "error",
       "@typescript-eslint/prefer-readonly": "error",
       "@typescript-eslint/unified-signatures": "error",
+      "@typescript-eslint/prefer-nullish-coalescing": "error",
+      "@typescript-eslint/prefer-optional-chain": "error",
       "functional/no-let": "error",
       "functional/no-conditional-statement": "error",
       "functional/no-loop-statement": "error"
